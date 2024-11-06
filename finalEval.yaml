@@ -1,0 +1,17 @@
+exp: TextClassification 
+
+mode:
+    - evaluate
+
+models:
+    hf_text_classification_model:
+        - /home/jparedeslarios/Final/sampleRoberta
+        
+id2label:
+    0: Taylor Swift
+    1: Post Malone
+    2: Maroon 5
+
+datafpath: /home/jparedeslarios/Final/sampleTestset.tsv
+
+predfpath: /home/jparedeslarios/Final/sampleOutput.tsv
