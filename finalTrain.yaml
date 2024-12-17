@@ -1,0 +1,22 @@
+exp: TextClassification 
+
+mode:
+    - train
+
+models:
+    hf_text_classification_model:
+        - distilbert/distilbert-base-uncased
+        
+labelLabel: label
+id2label:
+    0: Pop
+    1: Rock
+    2: Country
+
+
+epochs: 8
+batchSize: 4
+
+trainfpath: /Users/joseparedes/Desktop/NLPScholar/trainJG.tsv
+validfpath: /Users/joseparedes/Desktop/NLPScholar/valJG.tsv
+modelfpath: /Users/joseparedes/Desktop/NLPScholar/bert1

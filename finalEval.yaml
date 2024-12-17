@@ -1,0 +1,22 @@
+exp: TextClassification 
+
+mode:
+    - evaluate
+
+models:
+    hf_text_classification_model:
+        - /Users/joseparedes/Desktop/NLPScholar/bert6
+        
+id2label:
+    0: Miley Cyrus
+    1: Taylor Swift
+    2: Demi Lovato
+    3: Coldplay
+    4: Imagine Dragons
+    5: Foo Fighters
+    6: Carrie Underwood
+    7: Jason Aldean
+    8: Miranda Lambert
+    
+datafpath: /Users/joseparedes/Desktop/NLPScholar/testMini.tsv
+predfpath: /Users/joseparedes/Desktop/NLPScholar/bertOutputs/OutputBert6.tsv
